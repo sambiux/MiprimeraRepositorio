@@ -1,0 +1,224 @@
+    /* Importa la fuente 'Lilita One' desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+/* Estilos generales del cuerpo de la página */
+body {
+    display: grid; /* Usa CSS Grid para organizar el diseño */
+    grid-template-columns: repeat(5, 1fr); /* Crea 5 columnas de igual tamaño */
+    grid-template-rows: repeat(7, 1fr); /* Crea 7 filas de igual tamaño */
+    gap: 8vh; /* Espaciado vertical entre los elementos del grid */
+    font-family: "Lilita One", sans-serif; /* Aplica la fuente importada */
+    font-weight: 400; /* Define el grosor del texto */
+    font-style: normal; /* Mantiene el estilo normal de la fuente */
+}
+
+/* Configuración general de las imágenes */
+img {
+    width: 5vw; /* Define el ancho al 5% del viewport */
+    height: 4vh; /* Define la altura al 4% del viewport */
+    object-fit: contain; /* Ajusta la imagen para que quepa sin recortarla */
+    transition: box-shadow 0.3s ease, background-color 0.3s ease; /* Suaviza la transición de la sombra y el color de fondo */
+}
+
+/* Ajusta el tamaño de las imágenes dentro del contenedor 'hijo1' */
+.hijo1 img {
+    height: 8vh; /* Define la altura */
+    width: 12vw; /* Define el ancho */
+    border-radius: 7px; /* Bordes redondeados */
+}
+
+/* Efecto de sombra al pasar el mouse sobre cualquier imagen */
+img:hover {
+    box-shadow: 4px 4px 4px; /* Agrega una sombra */
+}
+
+/* Personaliza la sombra de las imágenes dentro de la sección CSS */
+.informacionCss img:hover {
+    box-shadow: 4px 4px 4px rgb(0, 170, 255); /* Sombra azul */
+}
+
+/* Personaliza la sombra de las imágenes dentro de la sección JavaScript */
+.informacionJs img:hover {
+    box-shadow: 4px 4px 4px #F7DF1E; /* Sombra amarilla */
+}
+
+/* Contenedor principal de la cabecera */
+.contenedorPadre1 {
+    grid-column: 1 / 6; /* Ocupa desde la columna 1 hasta la 6 */
+    grid-row: 1 / 2; /* Ocupa la primera fila */
+    height: 16vh; /* Define la altura */
+    display: flex; /* Usa flexbox para organizar el contenido */
+    justify-content: space-between; /* Distribuye los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    
+}
+
+/* Contenedor 'hijo1', que organiza elementos dentro de la cabecera */
+.hijo1 {
+    display: flex; /* Usa flexbox */
+    margin-left: 3vw; /* Margen izquierdo */
+    height: 5vh; /* Altura del contenedor */
+    justify-content: space-around; /* Distribuye los elementos */
+    width: 30vw; /* Define el ancho */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+/* Contenedor 'hijo2' con configuración de ancho */
+.hijo2 {
+    display: flex; /* Usa flexbox */
+    width: 16vw; /* Define el ancho */
+}
+
+/* Estilos para los elementos dentro de 'hijo1' */
+.hijo1 div {
+    height: 4vh; /* Define la altura */
+    font-size: 1.6em; /* Tamaño del texto */
+}
+
+/* Elimina el subrayado de los enlaces dentro de 'hijo1' */
+.hijo1 a {
+    text-decoration: none; 
+    color: black; /* Color negro para el texto */
+}
+
+/* Efecto hover en los div dentro de 'hijo1' */
+.hijo1 div:hover {
+    border-top: 2px solid  rgb(0, 170, 255); /* Borde superior azul */
+}
+
+/* Configuración de la sección de información sobre CSS */
+.informacionLenguajes .informacionCss {
+    grid-column: 2 / 5; /* Ocupa columnas de la 2 a la 5 */
+    grid-row: 2 / 3; /* Ocupa la segunda fila */
+    display: flex; /* Usa flexbox */
+    flex-direction: column; /* Organiza los elementos en columna */
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+}
+
+/* Cambia el color del título dentro de la sección CSS */
+.informacionLenguajes .informacionCss h2 {
+    color: rgb(0, 170, 255); /* Azul */
+}
+
+/* Espaciado superior entre los elementos de listas ordenadas */
+ol li {
+    margin-top: 3vh;
+}
+
+/* Estilos de las imágenes dentro de 'informacionLenguajes' */
+.informacionLenguajes img {
+    width: 30vw;
+    height: 20vh;
+    margin-top: 6vh;
+    border-radius: 7px; /* Bordes redondeados */
+}
+
+/* Configuración de la sección de información sobre JavaScript */
+.informacionLenguajes .informacionJs {
+    grid-column: 2 / 5;
+    grid-row: 4 / 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Cambia el color del título dentro de la sección JavaScript */
+.informacionLenguajes .informacionJs h2 {
+    color: #F7DF1E; /* Amarillo */
+}
+
+/* Contenedor general de la información de lenguajes */
+.informacionLenguajes {
+    grid-column: 2 / 6; /* Ocupa de la columna 2 a la 6 */
+    grid-row: 2 / 6; /* Ocupa de la fila 2 a la 6 */
+    width: 50vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 15vh; /* Espaciado entre elementos */
+}
+
+/* Configuración del título principal */
+h1 {
+    text-align: center; /* Centra el texto */
+    color: rgb(0, 106, 255); /* Azul */
+}
+
+/* Estilos de la tabla */
+table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8vh;
+    transition: box-shadow 0.8s ease, background-color 0.3s ease;
+    
+    /* Atributos agregados sin afectar el diseño */
+    border-radius: 0;
+    position: static;
+    box-shadow: none;
+    overflow: visible;
+    z-index: auto;
+    opacity: 1;
+    margin: 0;
+    padding: 0;
+}
+
+/* Configuración de las celdas de la tabla */
+table th {
+    border: 2px solid black;
+    border-radius: 7px;
+}
+
+/* Configuración de la primera fila de la tabla */
+.primerFila th {
+    border-color: rgb(0, 106, 255);
+    color: rgb(0, 106, 255);
+}
+
+/* Efecto hover en las celdas de la tabla */
+table th:hover {
+    box-shadow: 1px 1px 1px;
+    border-bottom: 3px solid rgb(0, 106, 255);
+}
+
+/* Estilos para imágenes dentro de la tabla */
+table img {
+    align-content: center;
+    justify-content: center;
+    height: 2vh;
+    width: 2vw;
+    border-radius: 7px;
+    object-fit: cover;
+    transition: box-shadow 0.8s ease, background-color 0.3s ease;
+    padding: 2vh;
+}
+
+/* Efecto hover en imágenes dentro de la tabla */
+table img:hover {
+    box-shadow: 7px 7px 9px;
+}
+
+/* Estilos para la línea horizontal */
+hr {
+    border: 6px solid rgb(0, 106, 255);
+}
+
+/* Cambia el color del texto en la tercera celda de cada fila */
+tr th:nth-child(3) {
+    color: rgb(0, 106, 255);
+}
+
+/* Estilos de enlaces */
+a {
+    font-size: 0.8em;
+    color: rgb(0, 106, 255);
+}
+
+/* Color de enlaces visitados */
+a:visited {
+    color: black;
+}
